@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>后台管理页面</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">百度新闻后台</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻编辑页面</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">新闻标题</label>
+                                <input type="text" class="form-control" id="newstitle" placeholder="请输入新闻标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">新闻时间</label>
+                                <input type="date" class="form-control" id="newstime">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">新闻图片</label>
+                                <input type="text" class="form-control" id="newsimg" placeholder="请输入图片路径">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">新闻类型</label>
+                                <select class="form-control" id="newstype">
+                                    <option>精选</option>
+                                    <option>百家</option>
+                                    <option>本地</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn  btn-primary" id="submitbtn">提交新闻</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">新闻列表</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-condensed table-bordered" id="newstable">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>新闻标题</th>
+                                    <th>新闻图片</th>
+                                    <th>新闻类型</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>123</td>
+                                    <td>财经</td>
+                                    <td>焦点访谈</td>
+                                    <td>img/5.jpg</td>
+                                    <td>百家</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs">编辑</button>
+                                        <button class="btn btn-danger btn-xs">删除</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation" style="text-align: center;">
+                    <ul class="pagination" id="page">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="####" class="pagenumber select">1</a></li>
+                        <li><a href="####" class="pagenumber">2</a></li>
+                        <li><a href="####" class="pagenumber">3</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- 删除弹窗 -->
+    <div class="modal fade" id="deleteModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">删除提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p>你确定要删除内容吗？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="confirmdelete">提交修改</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- 修改弹窗 -->
+    <div class="modal fade" id="updateModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">新闻标题</label>
+                            <input type="text" class="form-control" id="unewstitle" placeholder="请输入新闻标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">新闻时间</label>
+                            <input type="date" class="form-control" id="unewstime">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">新闻图片</label>
+                            <input type="text" class="form-control" id="unewsimg" placeholder="请输入图片路径">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">新闻类型</label>
+                            <select class="form-control" id="unewstype">
+                                <option>精选</option>
+                                <option>百家</option>
+                                <option>本地</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="confirmupdate">提交修改</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/newsadmin.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+</body>
+
+</html>

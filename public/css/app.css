@@ -1,0 +1,213 @@
+.cf::before,
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*header*/
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #4182f1 url(../img/1.png) no-repeat center center;
+    background-size: 6rem;
+}
+
+header a {
+    display: block;
+    width: 4rem;
+    line-height: 4rem;
+    margin: 0 0.8rem;
+    color: #fff;
+}
+
+header a:nth-child(1),
+header a:nth-child(2) {
+    float: left;
+}
+
+header a:nth-child(3),
+header a:nth-child(4) {
+    float: right;
+}
+
+header a .iconfont {
+    font-size: 2rem;
+}
+
+
+/*nav*/
+
+nav {
+    background-color: #4182f1;
+}
+nav ul{
+	font-size: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.4rem;
+    width: 16.6%;
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+nav ul li i {
+    display: inline-block;
+    float: right;
+    height: 2rem;
+    border-right: 1px solid #5898f0;
+    position: relative;
+    top: -3px;
+}
+/*artical*/
+.news-menu .news-lists{
+	margin: 1.3rem 0 0 0;
+	padding: 0 1rem;
+}
+
+
+.news-lists .news-list{
+	    display: flex;
+	    border-bottom: 1px solid #E6E6E6;
+	    margin-top: 1rem;
+}
+.news-menu .news-img{
+	flex: 1;
+}
+.news-menu .news-img img{
+	height: 94px;
+	width: 100%;
+}
+.news-menu .news-content{
+	flex: 2;
+	margin-left: 1rem;
+}
+.news-content h2{
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	line-height: 1.5rem;
+}
+.news-content p{
+	margin-bottom: 1rem;
+}
+.news-share span{
+    margin-right: 1rem;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+}
+.news-share .share-logo{
+	position: relative;
+	top: 5px;
+}
+.news-share .weibo{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -6px -25px;
+}
+.news-share .weibo:hover{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -6px -3px;
+}
+.news-share .qq{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -31px -25px;
+}
+.news-share .qq:hover{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -31px -3px;
+}
+.news-share .wechat{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -55px -25px;
+}
+.news-share .wechat:hover{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/6.jpg) no-repeat;
+	background-size: 80px;
+	background-position: -55px -3px;
+}
+.news-content .news-logo{
+	position: relative;
+top: 5px;
+}
+.morebtn{
+	text-align: center;
+	margin-top: 15px;
+}
+.btn-primary{
+	display: inline-block;
+	color: #fff;
+    width: 70px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    background: #337ab7;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.btn-primary:hover{
+	color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+
+
+
+
+
+
+
+
+
+
+

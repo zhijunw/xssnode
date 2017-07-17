@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="keywords" content="百度首页">
+    <meta name="descrition" content="百度首页">
+    <!-- 容许全屏模式浏览 -->
+    <meta content="yes" name="app-mobile-web-app-capable">
+    <!-- 忽略将页面中的数字识别为电话号码 -->
+    <meta content="telephone=no" name="formt-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <a href="" class="logo">
+                <span class="iconfont">&#xe605;</span>
+            </a>
+            <a href="" class="logo">
+                <span class="iconfont">&#xe634;</span>
+            </a>
+            <a href="" class="logo">
+                <span class="iconfont">&#xe63a;</span>
+            </a>
+            <a href="" class="logo">
+                <span class="iconfont">&#xe503;</span>
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">精选</a><i></i></li>
+                <li><a href="">百家</a><i></i></li>
+                <li><a href="">本地</a><i></i></li>
+                <li><a href="">图片</a><i></i></li>
+                <li><a href="">娱乐</a><i></i></li>
+                <li><a href="">社会</a><i></i></li>
+                <li><a href="">军事</a><i></i></li>
+                <li><a href="">搞笑</a><i></i></li>
+                <li><a href="">互联网</a><i></i></li>
+                <li><a href="">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <article class="news-menu">
+
+            <ul class="news-lists">
+            </ul>
+            <div class="morebtn">
+                <a class="btn btn-primary" id="moreinfo">加载更多</a>
+            </div>
+        </article>
+    </div>
+     <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var devicewidth = $(document).width();
+        // console.log(devicewidth);
+        $("nav li").each(function(index, value) {
+            var lilength = $(this).find("a").html().length;
+            if (lilength > 2) {
+                $(this).width(devicewidth / 3)
+            } else {
+                $(this).width(devicewidth / 6)
+
+            }
+        })
+    })
+    </script>
+<script type="text/javascript" src="js/news.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+
+</body>
+
+</html>
