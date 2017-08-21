@@ -7,7 +7,7 @@ $(document).ready(function() {
         //上一页，下一页
         e.preventDefault();
         //得到数值
-        var $number = parseInt($(this).text())+1;
+        var $number = parseInt($(this).text())-1;
         $(this).addClass("select").parent().siblings().find("a").removeClass("select");
         //定义一页显示30条
         var pagenumber = 20;
