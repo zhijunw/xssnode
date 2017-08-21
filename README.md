@@ -8,7 +8,7 @@
 *   mysql 进行数据的增删改差。
 
 ### 项目概览 ###
-先看一波实现图吧。
+先看一波实现图吧。这里gif 有点大，需要点进来看。
 ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firlznbncwg20bw0dchdu.jpg)
 ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firlzx61m0g20b00dc7wj.jpg)
 ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firm02vxpeg20dc0c44qq.jpg)
