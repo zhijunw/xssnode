@@ -29,8 +29,8 @@
 ********************
 #### 2，后台页面的增删改查 ####
 *    1.主要是得到用户输入值，然后点击通过点击按钮的时候发送请求，先看express 的路由接口设置。如图，
-![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firn84wdirj20vy0f177x.jpg)
 ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firn7r9whdj20vx0hhtdi.jpg)
+![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firn84wdirj20vy0f177x.jpg)
 ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firn9l76kfj20ra0gn42c.jpg)
 这里说明下，到了后台管理页面，往app.js里面看，这里就要执行这2段代码了，
 
@@ -54,7 +54,7 @@
  这里需要注意的是name值必须为_csrf,这个Input标签的作用就相当于自身带了一个令牌（身份证）。
 
  然后，在用户输入的时候也要获取到这个input的值，并一起发给后台，如图，
- ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firnuwyq95j20iz0e576k.jpg)
+ ![图片](https://ws1.sinaimg.cn/large/8d59b975ly1firn9l76kfj20ra0gn42c.jpg)
  
    接着，在express里面需要npm安装csurf插件并引入,如图
  ![图片](https://ws1.sinaimg.cn/large/8d59b975gy1firnz2jwkwj20qg056abg.jpg)
